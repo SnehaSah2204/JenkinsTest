@@ -26,6 +26,8 @@ public class StudentController {
 	@Autowired
 	private StudentRepository repository;
 	
+	
+	//CHANGE MADE
 	@GetMapping("/getAll")
 	public ResponseEntity<?> getStudent(){
 		List<Student> students =repository.findAll();
